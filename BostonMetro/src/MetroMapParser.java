@@ -60,6 +60,7 @@ public class MetroMapParser extends Boston{
 	{
 	    MetroMapParser mmp = new MetroMapParser(filename);
 	    mmp.generateGraphFromFile();
+	    Boston bms = new Boston();
 	}
 	catch(Exception e)
 	{
