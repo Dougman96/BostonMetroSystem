@@ -1,15 +1,19 @@
 public class Edge implements IEdge {
   
-	private INode startNode;
-	private INode endNode;
+	private INode node1;
+	private INode node2;
+	public Edge(INode node1, INode node2){
+		this.node1 = node1;
+		this.node2 = node2;
+	}
 	
 	@Override
 	public INode getNodeA(){
-		return this.startNode;
+		return node1;
 	}
 	
 	@Override
 	public INode getNodeB(){
-		return this.endNode;
+		return node2;
 	}
 }

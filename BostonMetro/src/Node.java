@@ -1,27 +1,13 @@
-import java.util.*;
-import java.util.Set;
-import java.util.HashSet;
-
 public class Node implements INode {
-	private String nodeName;
-	private int id;
+	private int nodeID;
 
-	public Node(){
-		this.id = id;
-		//this.nodeName = nodeName;
+	public Node(int nodeID) {
+		this.nodeID = nodeID;
 	}
 
 	@Override
 	public int getId() {
-		return this.getId();
+		return nodeID;
 	}
 
-
-
-	/*@Override
-	public String getName(String name) {
-		return this.getName(name);
-	}*/
-	
-	
 }

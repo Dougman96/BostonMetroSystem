@@ -1,30 +1,19 @@
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.List;
 
 public class Boston {
 	
- private String getUserOrigin() 
-   {
-	   Scanner reader = new Scanner(System.in);
-	   System.out.println("Please enter the station you are leaving from: \n");
-	   String origin = reader.nextLine();
-	   //user inputs origin station
-	   return origin;
+	MultiGraphADT mg = new MultiGraph();
+	
+   
+   public boolean addStation(INode node){
+	   return mg.addNode(node);
    }
-   private String getUserDestination (){
-	   Scanner reader = new Scanner(System.in);
-	   System.out.println("Please enter the station you wish to go to: \n");
-	   //user input destination
-	   String destination = reader.nextLine();
-	   return destination;
-   }
-   private String printOutput() 
-   {
-	return null;
+   public boolean addTrack(INode node1, INode node2){
+	   return mg.addEdge(node1, node2);
    }
    
+   public List<INode> findPath(INode start, INode end){
+	   return mg.searchBFS(start, end);
+   }
   
 }

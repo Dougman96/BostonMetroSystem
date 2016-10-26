@@ -66,27 +66,6 @@ public class MetroMapParser extends Boston{
 	    e.printStackTrace();
 	}
     }
-    
-    MultiGraphADT mg = new MultiGraph();
-    Map<Integer, String> nodeMap = new HashMap<>();
-    
-    public boolean getLine(int station1, int station2, String lineColour){
-		   mg.addLine(station1, station2, lineColour);
-		   assert false : getLine( station1,  station2, lineColour);
-		   System.out.println("Adding Lines to Graph");
-		   return true;
-		   
-		   
-	   }
-	   
-	   public boolean getStation(int id, String stationName){
-		   mg.addStation(id);		   
-		   nodeMap.put(id, stationName);
-		   assert false : getStation(id,  stationName);
-		   return true;
-		   
-		   
-	   }
 
     
     protected static void usage()
@@ -210,8 +189,7 @@ public class MetroMapParser extends Boston{
 		
 	    line = fileInput.readLine();
 	    
-		IEdge edge = new Edge();
-		INode node = new Node();
+		
 	}
 	  
        

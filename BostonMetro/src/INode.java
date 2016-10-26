@@ -1,5 +1,5 @@
 public interface INode {
-	
-   public int getId();
+
+	public int getId();
 
 }
